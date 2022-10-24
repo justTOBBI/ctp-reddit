@@ -1,0 +1,232 @@
+/* ==UserStyle==
+@name           Catppuccin Reddit
+@namespace      github.com/catppuccin/reddit
+@version        1.0.0
+@description    Soothing pastel theme for Reddit
+@author         Catppuccin
+@updateURL      https://github.com/catppuccin/codeberg/raw/main/catppuccin.user.css
+@preprocessor stylus
+
+@var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
+==/UserStyle== */
+@-moz-document url-prefix("https://www.reddit.com/") {
+    if (theme=="Latte") {
+        $type = light
+        
+        $rosewater = #dc8a78
+        $flamingo = #dd7878
+        $pink = #ea76cb
+        $mauve = #8839ef
+        $red = #d20f39
+        $maroon = #e64553
+        $peach = #fe640b
+        $yellow = #df8e1d
+        $green = #40a02b
+        $teal = #179299
+        $sky = #04a5e5
+        $sapphire = #209fb5
+        $blue = #1e66f5
+        $lavender = #7287fd
+        $text = #4c4f69
+        $subtext1 = #5c5f77
+        $subtext0 = #6c6f85
+        $overlay2 = #7c7f93
+        $overlay1 = #8c8fa1
+        $overlay0 = #9ca0b0
+        $surface2 = #acb0be
+        $surface1 = #bcc0cc
+        $surface0 = #ccd0da
+        $base = #eff1f5
+        $mantle = #e6e9ef
+        $crust = #dce0e8
+    }
+    else if (theme=="Frappe") {
+        $type = dark
+        
+        $rosewater = #f2d5cf
+        $flamingo = #eebebe
+        $pink = #f4b8e4
+        $mauve = #ca9ee6
+        $red = #e78284
+        $maroon = #ea999c
+        $peach = #ef9f76
+        $yellow = #e5c890
+        $green = #a6d189
+        $teal = #81c8be
+        $sky = #99d1db
+        $sapphire = #85c1dc
+        $blue = #8caaee
+        $lavender = #babbf1
+        $text = #c6d0f5
+        $subtext1 = #b5bfe2
+        $subtext0 = #a5adce
+        $overlay2 = #949cbb
+        $overlay1 = #838ba7
+        $overlay0 = #737994
+        $surface2 = #626880
+        $surface1 = #51576d
+        $surface0 = #414559
+        $base = #303446
+        $mantle = #292c3c
+        $crust = #232634
+    }
+    else if (theme=="Macchiato") {
+        $type = dark
+        
+        $rosewater = #f4dbd6
+        $flamingo = #f0c6c6
+        $pink = #f5bde6
+        $mauve = #c6a0f6
+        $red = #ed8796
+        $maroon = #ee99a0
+        $peach = #f5a97f
+        $yellow = #eed49f
+        $green = #a6da95
+        $teal = #8bd5ca
+        $sky = #91d7e3
+        $sapphire = #7dc4e4
+        $blue = #8aadf4
+        $lavender = #b7bdf8
+        $text = #cad3f5
+        $subtext1 = #b8c0e0
+        $subtext0 = #a5adcb
+        $overlay2 = #939ab7
+        $overlay1 = #8087a2
+        $overlay0 = #6e738d
+        $surface2 = #5b6078
+        $surface1 = #494d64
+        $surface0 = #363a4f
+        $base = #24273a
+        $mantle = #1e2030
+        $crust = #181926
+    }
+    else if (theme=="Mocha") {
+        $type = dark
+    
+        $rosewater = #f5e0dc
+        $flamingo = #f2cdcd
+        $pink = #f5c2e7
+        $mauve = #cba6f7
+        $red = #f38ba8
+        $maroon = #eba0ac
+        $peach = #fab387
+        $yellow = #f9e2af
+        $green = #a6e3a1
+        $teal = #94e2d5
+        $sky = #89dceb
+        $sapphire = #74c7ec
+        $lavender = #b4befe
+        $blue = #89b4fa
+        $text = #cdd6f4
+        $subtext1 = #bac2de
+        $subtext0 = #a6adc8
+        $overlay2 = #9399b2
+        $overlay1 = #7f849c
+        $overlay0 = #6c7086
+        $surface2 = #585b70
+        $surface1 = #45475a
+        $surface0 = #313244
+        $base = #1e1e2e
+        $mantle = #181825
+        $crust = #11111b
+    }
+    
+    :root {
+        --newRedditTheme-field: $surface1;
+        --newRedditTheme-body: $base;
+        --comments-overlay-background: rgba($mantle, 0.5)
+    }
+    
+    :root {
+        --newCommunityTheme-field: $surface1;
+        --newCommunityTheme-bodyText: $subtext0;
+        --newCommunityTheme-body: $base!important;
+        --newCommunityTheme-line: $overlay0;
+    }
+    
+    
+    ._31N0dvxfpsO6Ur5AKx4O5d,
+    ._2vkeRJojnV7cb9pMlPHy7d {
+        background-color: $base;
+    }
+    
+    .wBtTDilkW_rtT2k5x3eie{
+        background-color: $surface0;
+        color: $text;
+    }
+    
+    /* Home Page Cards */
+    ._1RYN-7H8gYctjOQeL8p2Q7,
+    ._11R7M_VOgKO1RJyRSRErT3,
+    ._3-miAEojrCvx_4FQ8x3P-s,
+    ._14-YvdFiW5iVvfe5wdgmET,
+    .t3_ybv0vo._2FCtq-QzlfuN-SwVMUZMM3,
+    ._3Oa0THmZ3f5iZXAQ0hBJ0k {
+        background-color: $base!important;
+        color: $text;
+    }
+    
+    
+    ._2jJNpBqXMbbyOiGCElTYxZ {
+        background-color: $surface0;
+    }
+    
+    /* Site Top Bar */
+    ._3dnbqz69WJTFCss8wl7Wlk {
+        background-color: $base;
+    }
+    ._1DeR7_QiQnu2UK0e2dDfYD.h5AN6BnHrFmiSiSIKQbi0,
+    ._1DeR7_QiQnu2UK0e2dDfYD ._1K7ubH9z5v9E6C19j2fjQU{
+        background-color: $base
+    }
+    .h-jI8r2f9ozTNqu_2TBeY {
+        background-color: $base;
+    }
+    ._1DeR7_QiQnu2UK0e2dDfYD, ._1DeR7_QiQnu2UK0e2dDfYD,
+    ._1DeR7_QiQnu2UK0e2dDfYD:focus-within ._1K7ubH9z5v9E6C19j2fjQU:focus-within, {
+        background-color: $base;
+    }
+    /* HomePage Post Background */
+    ._3obgdFz00GvpqpuX8QCsNK,
+    ._1npCwF50X2J7Wt82SZi6J0,{
+        background-color: $crust;
+    }
+    
+    ._2rszc84L136gWQrkwH6IaM,
+    .uI_hDmU5GSiudtABRz_37,
+    ._1YCqQVO-9r-Up6QPB9H6_4,
+    ._2ulKn_zs7Y3LWsOqoFLHPo,
+    ._2M2wOqmeoPVvcSsJ6Po9-V._3287nL7j7epK9JmDC3N1VR,
+    ._2M2wOqmeoPVvcSsJ6Po9-V{ 
+        background-color: $base;
+        color: $text;
+    }
+    
+    ._1r4smTyOEZFO91uFIdWW6T .public-DraftEditor-content,
+    ._2baJGEALPiEMZpWB2iWQs7 .public-DraftEditor-content{
+        background-color: $base;
+        border-radius: 8px;
+        border-color: $overlay0;
+    }
+    
+    ._2YcMhGs5-uIg9Fj4a9J2Xr,
+    .RQTXfVRnnTF5ont3w58rx { 
+        background-color: $surface0;
+        color: $text;
+    }
+    
+    h1, h2, h3, h4, h5, h6{
+        color: $text;
+    }
+    
+    /* Line Indicating Depth of Conversation */
+    ._36AIN2ppxy_z-XSDxTvYj5 > .threadline {
+        border-color: $surface1;
+    }
+    
+    /* Spoilers */
+    ._2v4IIjPhKL0PDaWaWtjJ1E,
+    ._2v4IIjPhKL0PDaWaWtjJ1E._15VS32zBYFUDI5ssldQhEK{
+        background: $surface1;
+    }
+}
